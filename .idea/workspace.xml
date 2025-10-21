@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcbcf6d1-02a5-4437-8a5a-3681fd61e5e3" name="Changes" comment="feat: Initial commit">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="bcbcf6d1-02a5-4437-8a5a-3681fd61e5e3" name="Changes" comment="feat: Added scraped csv">
+      <change afterPath="$PROJECT_DIR$/ccna_ext/answers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccna_ext/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccna_ext/content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccna_ext/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccna_ext/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +44,15 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/alexanderh/PycharmProjects/CCNA_Ext/ccna_ext"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ccna_ext" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +76,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761061651740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Added main.py script to scrape">
+      <option name="closed" value="true" />
+      <created>1761062154055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761062154055</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: Added scraped csv">
+      <option name="closed" value="true" />
+      <created>1761062170471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761062170471</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Initial commit" />
+    <MESSAGE value="feat: Added main.py script to scrape" />
+    <MESSAGE value="feat: Added scraped csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Added scraped csv" />
   </component>
 </project>

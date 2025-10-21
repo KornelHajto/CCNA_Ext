@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "CCNA_Ext",
+  "version": "1.0",
+  "description": "Highlights a question and presses Ctrl+Q to find the answer from a pre-loaded list.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["answers.csv"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "find_answer": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      },
+      "description": "Find the answer for the selected question"
+    }
+  }
+}

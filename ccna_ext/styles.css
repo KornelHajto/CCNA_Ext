@@ -1,0 +1,104 @@
+/* Main transparent overlay */
+#search-overlay {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 700px;
+
+  /* --- MAXIMUM TRANSPARENCY --- */
+  background-color: transparent; /* No background color */
+  backdrop-filter: blur(5px);   /* Optional: keeps a slight blur for readability. Remove if you want it clearer. */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Very faint border */
+
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  z-index: 999999;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add a shadow to all text to make it readable on any background */
+#search-overlay * {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* The search input field */
+#search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+
+  /* --- TRANSPARENCY --- */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.1); /* Very slightly darkens the input area */
+
+  color: white;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: rgba(173, 216, 230, 0.7); /* Light blue focus color */
+}
+
+/* Container for search results */
+#results-container {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+/* Individual search result item */
+.result-item {
+  padding: 10px;
+  margin: 2px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: left;
+}
+
+/* Highlight on hover */
+.result-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style for the displayed answer */
+.final-answer {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.final-answer strong {
+  color: #75fbeb;
+}
+
+/* Close button in the top right */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+  text-shadow: none;
+}
+
+#close-btn:hover {
+  color: white;
+}
